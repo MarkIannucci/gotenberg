@@ -3,7 +3,7 @@
   "extends": ["config:recommended"],
   "enabledManagers": ["dockerfile", "gomod"],
   "semanticCommits": "enabled",
-  "schedule": ["before 6am on monday"],
+  "schedule": ["at any time"],
   "packageRules": [
     {
       "description": "Dependabot owns Go module dependencies. Renovate only handles the toolchain.",
