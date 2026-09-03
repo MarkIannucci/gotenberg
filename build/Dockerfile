@@ -485,7 +485,7 @@ FROM gotenberg AS gotenberg-aws-lambda
 
 USER root
 
-COPY --from=public.ecr.aws/awsguru/aws-lambda-adapter:0.9.1 /lambda-adapter /opt/extensions/lambda-adapter
+COPY --from=public.ecr.aws/awsguru/aws-lambda-adapter:1.1.0 /lambda-adapter /opt/extensions/lambda-adapter
 
 ENV AWS_LWA_PORT=3000
 ENV AWS_LWA_READINESS_CHECK_PATH=/health
@@ -503,7 +503,7 @@ FROM gotenberg-chromium AS gotenberg-aws-lambda-chromium
 
 USER root
 
-COPY --from=public.ecr.aws/awsguru/aws-lambda-adapter:0.9.1 /lambda-adapter /opt/extensions/lambda-adapter
+COPY --from=public.ecr.aws/awsguru/aws-lambda-adapter:1.1.0 /lambda-adapter /opt/extensions/lambda-adapter
 
 ENV AWS_LWA_PORT=3000
 ENV AWS_LWA_READINESS_CHECK_PATH=/health
@@ -521,7 +521,7 @@ FROM gotenberg-libreoffice AS gotenberg-aws-lambda-libreoffice
 
 USER root
 
-COPY --from=public.ecr.aws/awsguru/aws-lambda-adapter:0.9.1 /lambda-adapter /opt/extensions/lambda-adapter
+COPY --from=public.ecr.aws/awsguru/aws-lambda-adapter:1.1.0 /lambda-adapter /opt/extensions/lambda-adapter
 
 ENV AWS_LWA_PORT=3000
 ENV AWS_LWA_READINESS_CHECK_PATH=/health
